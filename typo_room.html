@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Typo.in - Create/Join a Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="typo.css">
+
+</head>
+<body>
+<div class="container">
+<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
+	<center>
+		<h1 class="header">	
+			Typo.in
+			<sup>
+				<img src="m2.png">
+			</sup>
+		</h1>
+		<h3 class="color_white" id="username">Welcome  !</h3>
+		<div class="form-group input_div_room_page">
+			<label>#CreateARoom:</label>
+			<input id="roomName" class="form-control" placeholder="Enter your room name here (write a non existing room name)...">
+		</div>
+		<br>
+		<button class="btn btn-primary" onclick="addRoom();">#CreateARoom</button>
+		<h3 class="color_white">#JoinARoom</h3>
+	<div id="output"></div>
+	</center>
+</div>
+<script src="typo_room.js"></script>
+</body>
+</html>
